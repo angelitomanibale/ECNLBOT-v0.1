@@ -1,0 +1,17 @@
+{
+    "name": "ECNLBOT",
+    "icons": {
+        "48": "icon.PNG"
+    },
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "permissions": ["scripting", "tabs", "activeTab", "webNavigation", "alarms", "storage"],
+    "content_scripts": [
+        {
+            "js": ["script.js"],
+            "matches": ["https://ecandl.net/colortask/*"]
+        }
+    ],
+    "background": {"service_worker": "background.js"} 
+    
+}
